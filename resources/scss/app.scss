@@ -6,54 +6,53 @@ $color-blue : #0282F9;
 
 //HEADER
 
-.header-overline{
-    height: 30px;
-    background-color: $color-blue;
-    font-size: small;
-    display: flex;
-    align-items: center;
-    text-transform: uppercase;
-    color: white;
-    font-weight: bolder;
-}
-
-nav{
-    height: 100px;
-    .logo-h{
-        height: 80%;
-        padding: 10px 0;
-    }
-    
-    ul.menu{
+header{
+    .header-overline{
+        height: 30px;
+        background-color: $color-blue;
+        font-size: small;
         text-transform: uppercase;
-        color: gray;
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        display: flex;
-        li{
-            padding: 30px 0;
-            margin: 0 10px;
-            cursor: pointer;
-            &:hover{
-                padding-bottom: 25px;
-                border-bottom: 5px $color-blue solid;
+        color: white;
+        font-weight: bolder;
+    }
+
+    nav{
+        height: 100px;
+        .row{
+            height: 100%;
+        }
+        .logo{
+            height: 80%;
+        }
+        ul.menu{
+            list-style: none;
+            height: 100%;
+            li{
+                display: flex;
+                align-items: center;
+                height: 100%;
+                list-style: none;
+                margin: 0 10px;
+                &.active, &:hover{
+                    border-bottom: 7px $color-blue solid;
+                    border-top: 7px white solid;
+                }
+                a{
+                    text-decoration: none;
+                    color: gray;
+                    text-transform: uppercase;
+                }
+                i.fa-solid{
+                    color: $color-blue;
+                }
             }
-            a{
-                color: inherit;
-                font-weight: inherit;
-                text-decoration: inherit;
+        }
+        .my-searchbar{
+            border-bottom: 3px $color-blue solid ;
+            .my-input{
+                border: none;
+                text-align: end;
             }
         }
     }
-    
-    .my-serchbar{
-        border-bottom: 3px solid $color-blue;
-        padding: 0;
-        .my-input{
-            border: none;
-            text-align: end;
-        }
-    }
-    
 }

@@ -17,6 +17,12 @@
 
 <body>
     @include('partials.header')
+    <main>
+        <div class="jumbotron">
+            
+        </div>
+
+    </main>
 </body>
 
 </html>
