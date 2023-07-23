@@ -29,7 +29,7 @@
                     @foreach ($comics as $comic)
                     <div class="col-2">
                         <img class="cover-comic" src="{{ $comic['thumb'] }}" alt="">
-                        <a href="{{ route('comic') }}"><h4>{{ $comic['title'] }}</h4></a>
+                        <a href="{{ route('comic') }}"><h5>{{ $comic['title'] }}</h5></a>
                     </div>
                     @endforeach
                     <button class="blue-button text-format col-4">
@@ -37,11 +37,22 @@
                     </button>
                 </div>
             </div>
-
            </div>
-            
+        </div>
+        <div id="blue-section">
+            <div class="container">
+                <ul class="row d-flex py-5 justify-content-between">
+                    @foreach($sectionBlue as $section)
+                    <li class="col-2 d-flex align-items-center">
+                        <img class="me-2" src="{{ Vite::asset($section['sectionImage']) }}" alt="">
+                        <a href=""><h6>{{ $section['sectionName'] }}</h6></a>
+                    </li>
+                    @endforeach
+                </ul>
+            </div>
         </div>
     </main>
+    @include('partials.footer')
 </body>
 
 </html>

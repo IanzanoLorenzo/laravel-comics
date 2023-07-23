@@ -33,13 +33,14 @@ header{
                 height: 100%;
                 list-style: none;
                 margin: 0 10px;
+                font-weight: 700;
+                color: gray;
                 &.active, &:hover{
-                    border-bottom: 7px $color-blue solid;
-                    border-top: 7px white solid;
+                    border-bottom: 10px $color-blue solid;
+                    border-top: 10px white solid;
+                    color: $color-blue;
                 }
                 a{
-                    text-decoration: none;
-                    color: gray;
                     text-transform: uppercase;
                 }
                 i.fa-solid{
@@ -55,6 +56,11 @@ header{
             }
         }
     }
+}
+
+a{
+    text-decoration: inherit;
+    color: inherit;
 }
 
 .jumbotron{
@@ -83,6 +89,7 @@ header{
 }
 
 .content{
+    text-transform: uppercase;
     background-color: #1c1c1c;
     color: white;
     .current-series{
@@ -98,5 +105,24 @@ header{
         height: 15vw;
         object-fit: cover;
         object-position: top;
+    }
+}
+
+#blue-section{
+    background-color: $color-blue;
+    color: white;
+    ul{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        li{
+            list-style: none;
+        }
+    }
+    img{
+        width: 50px;
+        height: 50px;
+        object-fit: contain;
+        object-position: center;
     }
 }
