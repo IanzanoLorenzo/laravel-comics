@@ -3,6 +3,7 @@
 //VARIABLES
 
 $color-blue : #0282F9;
+$color-gray : #303030;
 
 //HEADER
 
@@ -159,5 +160,23 @@ footer{
         background-repeat: no-repeat;
         background-size: cover;
         background-position: right;
+    }
+}
+
+#lower-footer{
+    background-color: $color-gray;
+    .black-button{
+        text-transform: uppercase;
+        color: white;
+        background-color: $color-gray;
+        border: $color-blue 3px solid;
+        padding: 10px 30px;
+    }
+    h4{
+        color: $color-blue;
+    }
+    i{
+        color: #6d6d6d;
+        font-size: 30px;
     }
 }
