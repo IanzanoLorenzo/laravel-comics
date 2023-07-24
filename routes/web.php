@@ -21,8 +21,10 @@ Route::get('/', function () {
     return view('home', compact('comics', 'bottomMenu', 'socials', 'sectionBlue'));
 })->name('home');
 
-Route::get('/comic', function(){
+Route::get('/{comic}', function($id){
+    $comics = config('db.comics');
+    $comic = $comics[$id];
     $bottomMenu = config('db.listsBottomMenu');
     $socials = config('db.socials');
-    return view('comic-details', compact('bottomMenu', 'socials'));
+    return view('comic-details', compact('bottomMenu', 'socials', 'comic'));
 })->name('comic');

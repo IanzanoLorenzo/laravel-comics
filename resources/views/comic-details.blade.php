@@ -1,22 +1,19 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+@extends('layouts.app')
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+@section('content')
+    <div id="blue-section">
+        <div class="container cover-container">
+            <img class="cover" src="{{ $comic['thumb'] }}" alt="">
+        </div>
+    </div>
+    <div id="comic-details">
+        <div class="container p-5">
 
-    <title>Laravel</title>
+        </div>
+    </div>
+    <div id="comic-info">
+        <div class="container">
 
-    <!-- Fonts -->
-    <link href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
-
-    <!-- Styles -->
-    @vite('resources/js/app.js')
-
-</head>
-<body>
-    @include('partials.header')
-    
-    @include('partials.footer')
-</body>
-</html>
+        </div>
+    </div>
+@endsection
