@@ -64,6 +64,10 @@ a{
     color: inherit;
 }
 
+.fa-sort-down{
+    transform: translate(10% , -20%);
+}
+
 .jumbotron{
     height: 400px;
     img{
@@ -189,4 +193,20 @@ footer{
         width: 175px;
         bottom: 50%;
     }
+}
+
+.availability{
+    background-color: #55ba59;
+    color: white;
+    button{
+        background-color: transparent;
+        border: none;
+        border-left: rgb(59, 59, 59) 1px solid;
+        color: white;
+    }
+}
+
+.comic-description{
+    line-height: 40px;
+    font-size: 18px;
 }

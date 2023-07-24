@@ -1,4 +1,7 @@
 <header>
+
+{{-- SEZIONE BLU SOPRA MENU --}}
+
     <div class="header-overline d-flex align-items-center">
         <div class="container">
             <div class="row align-items-center justify-content-end">
@@ -6,11 +9,14 @@
                     DC power&#8480;visa&#174;
                 </div>
                 <div class="col-auto">
-                    additional dc sites
+                    additional dc sites <i class="fa-solid fa-sort-down"></i>
                 </div>
             </div>
-        </div>    
+        </div>
     </div>
+
+{{-- SEZIONE MENU TOPBAR --}}
+
     <nav>
        <div class="container">
             <div class="row">
@@ -44,6 +50,9 @@
             </div>
         </div>
     </nav>
+
+{{-- SEZIONE JUMBOTRON --}}
+
     <div class="jumbotron">
         <img src="{{ Vite::asset('resources/images/jumbotron.jpg') }}" alt="">
     </div>
