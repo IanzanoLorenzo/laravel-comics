@@ -15,14 +15,14 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     $comics = config('db.comics');
-    $bottomMenu = config('db.listBottomMenu');
+    $bottomMenu = config('db.listsBottomMenu');
     $socials = config('db.socials');
     $sectionBlue = config('db.sections');
     return view('home', compact('comics', 'bottomMenu', 'socials', 'sectionBlue'));
 })->name('home');
 
 Route::get('/comic', function(){
-    $bottomMenu = config('db.listBottomMenu');
+    $bottomMenu = config('db.listsBottomMenu');
     $socials = config('db.socials');
     return view('comic-details', compact('bottomMenu', 'socials'));
 })->name('comic');

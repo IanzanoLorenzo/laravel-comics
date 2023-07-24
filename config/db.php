@@ -251,7 +251,7 @@ return [
             ]
         ],
         [
-            'listName' => 'DC COMICS',
+            'listName' => 'SITES',
             'listContent' => [
                 'DC',
                 'MAD Magazine',
