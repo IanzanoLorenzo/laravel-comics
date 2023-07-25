@@ -28,7 +28,7 @@
                         <div class="col d-flex justify-content-end">
                             <ul class="menu d-flex m-0 p-0">
                                 <li><a href="#">characters</a></li>
-                                <li class="{{ Route::currentRouteName() === 'home' ? 'active' : ''}}"><a href="{{ route('home') }}">comics</a></li>
+                                <li class="{{ Route::currentRouteName() === 'comics' ? 'active' : ''}}"><a href="{{ route('comics') }}">comics</a></li>
                                 <li><a href="#">movies</a></li>
                                 <li><a href="#">tv</a></li>
                                 <li><a href="#">games</a></li>

@@ -19,12 +19,12 @@ Route::get('/', function () {
     $socials = config('db.socials');
     $sectionBlue = config('db.sections');
     return view('home', compact('comics', 'bottomMenu', 'socials', 'sectionBlue'));
-})->name('home');
+})->name('comics');
 
 Route::get('/{comic}', function($id){
     $comics = config('db.comics');
     $comic = $comics[$id];
     $bottomMenu = config('db.listsBottomMenu');
     $socials = config('db.socials');
-    return view('comic-details', compact('bottomMenu', 'socials', 'comic'));
-})->name('comic');
+    return view('comic-show', compact('bottomMenu', 'socials', 'comic'));
+})->name('comics.show');

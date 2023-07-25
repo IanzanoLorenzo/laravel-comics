@@ -12,7 +12,7 @@
                 @foreach ($comics as $id => $comic)
                 <div class="col-2">
                     <img class="cover-comic" src="{{ $comic['thumb'] }}" alt="">
-                    <a href="{{ route('comic', $id) }}"><h5>{{ $comic['title'] }}</h5></a>
+                    <a href="{{ route('comics.show', $id) }}"><h5>{{ $comic['title'] }}</h5></a>
                 </div>
                 @endforeach
                 <button class="blue-button text-format col-4">

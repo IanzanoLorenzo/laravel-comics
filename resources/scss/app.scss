@@ -93,6 +93,10 @@ a{
     padding: 10px 65px;
 }
 
+.blue-text{
+    color: $color-blue;
+}
+
 .content{
     text-transform: uppercase;
     background-color: #1c1c1c;
@@ -195,6 +199,12 @@ footer{
     }
 }
 
+#comic-details ,#comic-info{
+    h1,h2,h3,h4,h5,h6{
+        color: #003f5e;
+    }
+}
+
 .availability{
     background-color: #55ba59;
     color: white;
@@ -209,4 +219,18 @@ footer{
 .comic-description{
     line-height: 40px;
     font-size: 18px;
+}
+
+#comic-info{
+    background-color: #f6f6f6;
+    .underline{
+        border-bottom: 1px rgba(160, 160, 160, 0.459) solid;
+        margin-bottom: 20px;
+    }
+}
+
+#menu-bot{
+    background-color: #f6f6f6;
+    border-top: 1px rgba(160, 160, 160, 0.459) solid;
+
 }
