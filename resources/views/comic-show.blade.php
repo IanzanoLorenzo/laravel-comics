@@ -14,8 +14,4 @@
     @include('partials.comicDetails')
 {{-- SEZIONE INFORMAZIONI FUMETTO --}}
     @include('partials.comicInfo')
-    {{-- boh bar --}}
-    <div id="menu-bot">
-        
-    </div>
 @endsection

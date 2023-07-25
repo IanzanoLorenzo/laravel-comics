@@ -11,8 +11,10 @@
             <div class="col-12 d-flex justify-content-center row">
                 @foreach ($comics as $id => $comic)
                 <div class="col-2">
-                    <img class="cover-comic" src="{{ $comic['thumb'] }}" alt="">
-                    <a href="{{ route('comics.show', $id) }}"><h5>{{ $comic['title'] }}</h5></a>
+                    <a href="{{ route('comics.show', $id) }}">
+                        <img class="cover-comic" src="{{ $comic['thumb'] }}" alt="">
+                        <h5>{{ $comic['title'] }}</h5>
+                    </a>
                 </div>
                 @endforeach
                 <button class="blue-button text-format col-4">
@@ -20,18 +22,6 @@
                 </button>
             </div>
         </div>
-        </div>
-    </div>
-    <div id="blue-section">
-        <div class="container">
-            <ul class="row d-flex py-5 justify-content-between">
-                @foreach($sectionBlue as $section)
-                <li class="col-2 d-flex align-items-center">
-                    <img class="me-2 blue-section-image" src="{{ Vite::asset($section['sectionImage']) }}" alt="">
-                    <a href=""><h6>{{ $section['sectionName'] }}</h6></a>
-                </li>
-                @endforeach
-            </ul>
         </div>
     </div>
 @endsection

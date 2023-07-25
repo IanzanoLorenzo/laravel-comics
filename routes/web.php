@@ -26,5 +26,6 @@ Route::get('/{comic}', function($id){
     $comic = $comics[$id];
     $bottomMenu = config('db.listsBottomMenu');
     $socials = config('db.socials');
-    return view('comic-show', compact('bottomMenu', 'socials', 'comic'));
+    $sectionBlue = config('db.sections');
+    return view('comic-show', compact('bottomMenu', 'socials', 'comic', 'sectionBlue'));
 })->name('comics.show');

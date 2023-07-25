@@ -22,6 +22,18 @@
         @include('partials.header')
         <main>
             @yield('content')
+            <div id="blue-section">
+                <div class="container">
+                    <ul class="row d-flex py-5 justify-content-between">
+                        @foreach($sectionBlue as $section)
+                        <li class="col-2 d-flex align-items-center">
+                            <img class="me-2 blue-section-image" src="{{ Vite::asset($section['sectionImage']) }}" alt="">
+                            <a href=""><h6>{{ $section['sectionName'] }}</h6></a>
+                        </li>
+                        @endforeach
+                    </ul>
+                </div>
+            </div>
         </main>
         @include('partials.footer')
     </body>
